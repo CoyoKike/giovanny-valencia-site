@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="darkreader-lock">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27%3E%3Crect width=%2724%27 height=%2724%27 fill=%27%230a0a0a%27/%3E%3Cpath d=%27M5 19V9l7-5 7 5v10z%27 fill=%27none%27 stroke=%27%23fff%27 stroke-width=%271.6%27/%3E%3C/svg%3E">
+<title>Giovanny Valencia — Community Organizing and Policy, Boston</title>
+<meta name="description" content="Giovanny Valencia organizes Boston neighborhoods and works with legislators so their needs reach the laws that shape them.">
+<link rel="preload" href="fonts/intertight.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/site.css?v=4">
+<link rel="stylesheet" href="css/gio.css?v=11">
+</head>
+<body>
+
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <span class="loader-word">VALENCIA</span>
+    <span class="loader-bar"><i id="loaderBar"></i></span>
+    <span class="loader-num mono" id="loaderNum">000</span>
+  </div>
+</div>
+
+<div class="cursor" id="cursor" aria-hidden="true"><span></span><b class="mono">View</b></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+
+<header class="nav" id="nav">
+  <a class="brand press" href="#top" aria-label="Giovanny Valencia, home">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19V9l7-5 7 5v10z" fill="none" stroke="#fff" stroke-width="1.8"/></svg>
+    <span>Giovanny Valencia</span>
+  </a>
+  <nav class="nav-links" aria-label="Main">
+    <a class="press" href="#drawing">The plan</a>
+    <a class="press" href="#places">Neighborhoods</a>
+    <a class="press" href="#practice">Practice</a>
+  </nav>
+  <a class="btn btn-ghost press" href="#contact">Start a project</a>
+</header>
+
+<main id="top">
+
+  <!-- 1. FLIGHT: the scroll flies the drone over the Common -->
+  <section class="flight" id="flight">
+    <div class="flight-stage">
+      <canvas class="flight-canvas" id="flightCanvas" aria-label="Black and white photographs of Roxbury, East Boston, Dorchester and the State House"></canvas>
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <p class="eyebrow mono"><span>Community organizing</span><span>Legislative relationships</span><span>Urban planning</span></p>
+        <h1 class="hero-title">
+          <span class="line"><span>From the block</span></span>
+          <span class="line"><span><em>to the State House.</em></span></span>
+        </h1>
+        <div class="hero-foot">
+          <p class="hero-lede">Giovanny Valencia organizes residents and works with legislators, so what a neighborhood needs makes it into the plans and the laws that shape it.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-solid press" href="#drawing">See the work</a>
+            <a class="btn btn-ghost press" href="#contact">Talk to me</a>
+          </div>
+        </div>
+      </div>
+      <div class="flight-caps" aria-hidden="true">
+        <p class="cap mono" data-at=".33"><b>East Boston</b><span>Maverick Square, across the harbor</span></p>
+        <p class="cap mono" data-at=".63"><b>Dorchester</b><span>Triple-deckers, block after block</span></p>
+        <p class="cap mono" data-at=".9"><b>Beacon Hill</b><span>The State House, where the laws are written</span></p>
+      </div>
+      <div class="hero-meta mono">
+        <span>42.3550° N</span><span>71.0656° W</span><span id="heroClock">00:00</span>
+      </div>
+      <div class="flight-bar" aria-hidden="true"><i><b id="flightBar"></b></i></div>
+      <div class="scroll-cue mono"><span>Scroll</span><i></i></div>
+    </div>
+  </section>
+
+  <!-- 2. STATEMENT -->
+  <section class="statement" id="statement">
+    <div class="statement-inner">
+      <p class="label mono">01 — The work</p>
+      <p class="statement-text" id="statementText">The laws that shape a neighborhood are written on Beacon Hill. Giovanny organizes the people who live with those laws, and brings them into the room with the legislators who write them.</p>
+      <div class="statement-figs">
+        <figure class="sfig sfig-a" data-speed="-0.18"><img src="img/dome.webp" srcset="img/dome-m.webp 800w, img/dome.webp 883w" sizes="30vw" width="883" height="1339" decoding="async" alt="The Massachusetts State House" loading="lazy"></figure>
+        <figure class="sfig sfig-b" data-speed="0.12"><img src="img/roofs.webp" srcset="img/roofs-m.webp 800w, img/roofs.webp 1500w" sizes="42vw" width="1500" height="1924" decoding="async" alt="Maverick Square, East Boston" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. DESCENT: from the city down to the block -->
+  <section class="ascent" id="descent">
+    <div class="ascent-stage">
+      <div class="ascent-layer" data-i="0"><img src="img/d-city.webp" srcset="img/d-city-m.webp 1100w, img/d-city.webp 2400w" sizes="100vw" width="2400" height="1350" decoding="async" alt="The Boston skyline" loading="lazy"></div>
+      <div class="ascent-layer" data-i="1"><img src="img/d-district.webp" srcset="img/d-district-m.webp 1100w, img/d-district.webp 2400w" sizes="100vw" width="2400" height="1350" decoding="async" alt="Dudley and Warren Streets, Roxbury" loading="lazy"></div>
+      <div class="ascent-layer" data-i="2"><img src="img/d-hood.webp" srcset="img/d-hood-m.webp 1100w, img/d-hood.webp 2400w" sizes="100vw" width="2400" height="1350" decoding="async" alt="Triple-deckers in Dorchester" loading="lazy"></div>
+      <div class="ascent-layer" data-i="3"><img src="img/d-block.webp" srcset="img/d-block-m.webp 1100w, img/d-block.webp 2400w" sizes="100vw" width="2400" height="1350" decoding="async" alt="Jackson Square station" loading="lazy"></div>
+      <div class="ascent-grid" aria-hidden="true"></div>
+      <div class="ascent-copy">
+        <div class="ascent-step" data-i="0"><p class="label mono">02 — The city</p><h2>Decisions start <em>far away.</em></h2><p>The State House writes rules for every neighborhood at once. Most residents never see the room where it happens.</p></div>
+        <div class="ascent-step" data-i="1"><p class="label mono">03 — The district</p><h2>Every district has <em>a legislator.</em></h2><p>Knowing them and their staff, and showing up with a clear ask, is how a neighborhood gets heard.</p></div>
+        <div class="ascent-step" data-i="2"><p class="label mono">04 — The neighborhood</p><h2>One neighborhood, <em>one voice.</em></h2><p>Residents, businesses and nonprofits, organized around what they agree on.</p></div>
+        <div class="ascent-step" data-i="3"><p class="label mono">05 — The block</p><h2>It starts <em>at the door.</em></h2><p>A neighbor, a conversation, a meeting in someone's living room. Every campaign begins here.</p></div>
+      </div>
+      <div class="gauge mono" aria-hidden="true">
+        <div class="gauge-row"><span>Scale</span><b id="gLevel">City</b></div>
+                <div class="gauge-row"><span>Who decides</span><b id="gLoad">State law</b></div>
+        <div class="gauge-track"><i id="gTrack"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. THE DRAWING: the State House, drawn as the camera flies over it -->
+  <section class="drawing" id="drawing">
+    <div class="draw-stage">
+      <canvas id="drawCanvas" aria-label="A blueprint drawing of the Massachusetts State House that draws itself as you scroll"></canvas>
+      <div class="draw-intro">
+        <p class="label mono">06 — The plan</p>
+        <h2 class="h-big">Everything starts <em>with a plan.</em></h2>
+      </div>
+      <svg class="mlines" id="mlines" aria-hidden="true"></svg>
+      <div class="mlabels" id="mlabels">
+        <div class="mlabel" data-at="-8,3,23.6" data-show=".42" data-side="l"><span class="mono">01</span><b>Community organizing</b><p>Door to door, block by block: residents who know what they want.</p></div>
+        <div class="mlabel" data-at="12,12,22" data-show=".55" data-side="r"><span class="mono">02</span><b>Coalition building</b><p>Tenants, small businesses, churches and nonprofits behind one ask.</p></div>
+        <div class="mlabel" data-at="-1,20.6,23" data-show=".62" data-side="l"><span class="mono">03</span><b>Community engagement</b><p>Meetings and listening sessions, in the languages people speak.</p></div>
+        <div class="mlabel" data-at="-24,18.4,17" data-show=".67" data-side="l"><span class="mono">04</span><b>Urban planning</b><p>Zoning, land use and housing, read for what they mean on the ground.</p></div>
+        <div class="mlabel" data-at="-9.6,21.5,-1" data-show=".76" data-side="l"><span class="mono">05</span><b>Testimony and hearings</b><p>Residents ready to speak at City Hall and the State House.</p></div>
+        <div class="mlabel gold" data-at="6.7,30.7,-1" data-show=".88" data-side="r"><span class="mono">06</span><b>Legislative relationships</b><p>Working with legislators and their staff on the bills that shape neighborhoods.</p></div>
+      </div>
+      <div class="draw-end">
+        <p class="mono">Massachusetts State House · Charles Bulfinch, 1798 · dome gilded 1874</p>
+        <p class="mono">Simplified drawing · not to scale</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. NEIGHBORHOODS (horizontal) -->
+  <section class="work" id="places">
+    <div class="work-head">
+      <p class="label mono">07 — Neighborhoods</p>
+      <h2 class="h-big">Every block <em>is different.</em></h2>
+      <p class="work-count mono"><span id="workIdx">01</span> / 08</p>
+    </div>
+    <div class="work-pin">
+      <div class="work-track" id="workTrack">
+        <article class="card press-card" tabindex="0"><div class="card-media"><img src="img/n-nubian.webp" srcset="img/n-nubian-m.webp 1100w, img/n-nubian.webp 1600w" sizes="34vw" width="1600" height="900" decoding="async" alt="Nubian Square station, Roxbury" loading="lazy"></div>
+          <div class="card-body"><span class="mono">01 · Roxbury's center</span><h3>Nubian Square</h3><p>A bus hub and a place to gather, at the heart of Roxbury.</p></div></article>
+        <article class="card press-card" tabindex="0"><div class="card-media"><img src="img/n-roxbury.webp" srcset="img/n-roxbury-m.webp 1100w, img/n-roxbury.webp 1600w" sizes="34vw" width="1600" height="900" decoding="async" alt="First Church in Roxbury, John Eliot Square" loading="lazy"></div>
+          <div class="card-body"><span class="mono">02 · John Eliot Square</span><h3>Roxbury</h3><p>Historic hills, triple-deckers and the churches of John Eliot Square.</p></div></article>
+        <article class="card press-card" tabindex="0"><div class="card-media"><img src="img/n-jackson.webp" srcset="img/n-jackson-m.webp 1100w, img/n-jackson.webp 1600w" sizes="34vw" width="1600" height="900" decoding="async" alt="Jackson Square station, on the Orange Line" loading="lazy"></div>
+          <div class="card-body"><span class="mono">03 · Orange Line and the Southwest Corridor</span><h3>Jackson Square</h3><p>Where Jamaica Plain meets Roxbury, rebuilding around the station.</p></div></article>
+        <article class="card press-card" tabindex="0"><div class="card-media"><img src="img/n-dorchester.webp" srcset="img/n-dorchester-m.webp 1100w, img/n-dorchester.webp 1600w" sizes="34vw" width="1600" height="900" decoding="async" alt="Triple-decker porches in Dorchester" loading="lazy"></div>
+          <div class="card-body"><span class="mono">04 · Triple-deckers</span><h3>Dorchester</h3><p>Boston's largest neighborhood, block after block of three-family homes.</p></div></article>
+        <article class="card press-card" tabindex="0"><div class="card-media"><img src="img/n-mattapan.webp" srcset="img/n-mattapan-m.webp 1100w, img/n-mattapan.webp 1600w" sizes="34vw" width="1600" height="900" decoding="async" alt="Mattapan Square" loading="lazy"></div>
+          <div class="card-body"><span class="mono">05 · Blue Hill Avenue</span><h3>Mattapan</h3><p>The trolley, Blue Hill Avenue and a strong Haitian community.</p></div></article>
+        <article class="card press-card" tabindex="0"><div class="card-media"><img src="img/n-eastboston.webp" srcset="img/n-eastboston-m.webp 1100w, img/n-eastboston.webp 1600w" sizes="34vw" width="1600" height="900" decoding="async" alt="Lyceum Hall, Maverick Square, East Boston" loading="lazy"></div>
+          <div class="card-body"><span class="mono">06 · Across the harbor</span><h3>East Boston</h3><p>Maverick Square, the airport next door and many Latino families.</p></div></article>
+        <article class="card press-card" tabindex="0"><div class="card-media"><img src="img/n-chinatown.webp" srcset="img/n-chinatown-m.webp 1100w, img/n-chinatown.webp 1600w" sizes="34vw" width="1600" height="900" decoding="async" alt="The Chinatown gate" loading="lazy"></div>
+          <div class="card-body"><span class="mono">07 · The gate on Beach Street</span><h3>Chinatown</h3><p>Dense, close to downtown and under steady development pressure.</p></div></article>
+        <article class="card press-card" tabindex="0"><div class="card-media"><img src="img/n-hydepark.webp" srcset="img/n-hydepark-m.webp 1100w, img/n-hydepark.webp 1600w" sizes="34vw" width="1600" height="900" decoding="async" alt="Cleary Square, Hyde Park" loading="lazy"></div>
+          <div class="card-body"><span class="mono">08 · Cleary Square</span><h3>Hyde Park</h3><p>Quiet streets and a busy square at the city's southern edge.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. PRACTICE -->
+  <section class="practice" id="practice">
+    <div class="practice-media">
+      <figure class="pm pm-main pm-portrait"><img src="img/giovanni.webp" width="640" height="800" decoding="async" alt="Giovanny Valencia" loading="lazy"></figure>
+      <figure class="pm pm-side pm-city" data-speed="-0.25"><img src="img/backbay.webp" srcset="img/backbay-m.webp 1100w, img/backbay.webp 2400w" sizes="(max-width: 900px) 100vw, 50vw" width="2400" height="1350" decoding="async" alt="Triple-decker porches in Dorchester" loading="lazy"></figure>
+    </div>
+    <div class="practice-copy">
+      <p class="label mono">08 — Practice</p>
+      <h2 class="h-big">One organizer. <em>Four rooms.</em></h2>
+      <ol class="disc">
+        <li class="press-row" tabindex="0"><span class="mono">A</span><div><h3>The living room</h3><p>Where residents first say what they need, and decide to act on it.</p></div></li>
+        <li class="press-row" tabindex="0"><span class="mono">B</span><div><h3>The community meeting</h3><p>Where one ask is agreed, and the coalition behind it is built.</p></div></li>
+        <li class="press-row" tabindex="0"><span class="mono">C</span><div><h3>The legislator's office</h3><p>Where the ask meets the people who can act on it, and their staff.</p></div></li>
+        <li class="press-row" tabindex="0"><span class="mono">D</span><div><h3>The hearing room</h3><p>Where residents testify, and a bill becomes the law they live with.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 7. MARQUEE -->
+  <section class="marquee" aria-hidden="true">
+    <div class="marquee-row" data-dir="-1"><span>Organize · Testify · Build coalitions · Meet legislators · </span><span>Organize · Testify · Build coalitions · Meet legislators · </span></div>
+    <div class="marquee-row outline" data-dir="1"><span>Listen · Organize · Advocate · Win · Listen · Organize · </span><span>Listen · Organize · Advocate · Win · Listen · Organize · </span></div>
+  </section>
+
+  <!-- 8. CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-bg"><img src="img/contact.webp" srcset="img/contact-m.webp 1100w, img/contact.webp 2400w" sizes="100vw" width="2400" height="1350" decoding="async" alt="" loading="lazy"></div>
+    <div class="contact-inner">
+      <p class="label mono">09 — Contact</p>
+      <h2 class="contact-title"><span>Start a</span> <em>project.</em></h2>
+      <form class="contact-form" id="contactForm" novalidate>
+        <label><span class="mono">Name</span><input id="cName" name="name" autocomplete="name" required></label>
+        <label><span class="mono">Email</span><input id="cEmail" name="email" type="email" autocomplete="email" required></label>
+        <label class="wide"><span class="mono">About</span>
+          <select id="cType" name="type">
+            <option>Organizing a community</option><option>Working with legislators</option><option>A hearing or testimony</option><option>A neighborhood plan</option><option>Something else</option>
+          </select>
+        </label>
+        <label class="wide"><span class="mono">Message</span><textarea id="cMsg" name="message" rows="3"></textarea></label>
+        <p class="form-err mono" id="formErr" role="alert"></p>
+        <button class="btn btn-light btn-xl press" type="submit">Write to Giovanny</button>
+        <p class="form-note mono">Opens your email app with the message filled in.</p>
+      </form>
+      <div class="form-done" id="formDone" hidden><h3>Thank you.</h3><p>Your email app should be open with the message ready to send.</p></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-big" aria-hidden="true">VALENCIA</div>
+  <div class="foot-row mono">
+    <span>Giovanny Valencia · Community organizing and policy · Boston</span>
+    <a class="press" href="#top">Back to top ↑</a>
+  </div>
+  <p class="credits mono">Photos: Wikimedia Commons, shown in black and white. <a href="https://commons.wikimedia.org/wiki/File:Boston_skyline_from_Longfellow_Bridge_September_2017_panorama_2.jpg" target="_blank" rel="noopener">Boston skyline from Longfellow Bridge September 2017 panorama 2</a> by King of Hearts (CC BY-SA 4.0); <a href="https://commons.wikimedia.org/wiki/File:Massachusetts_State_House_Boston_November_2016.jpg" target="_blank" rel="noopener">Massachusetts State House Boston November 2016</a> by King of Hearts (CC BY-SA 4.0); <a href="https://commons.wikimedia.org/wiki/File:Copley_Square_with_Trinity_Church_and_Hancock_Tower.jpg" target="_blank" rel="noopener">Copley Square with Trinity Church and Hancock Tower</a> by Gregg Squeglia (CC BY-SA 4.0); <a href="https://commons.wikimedia.org/wiki/File:Blackstone_Square_-_Boston,_MA_-_DSC06760.jpg" target="_blank" rel="noopener">Blackstone Square - Boston, MA - DSC06760</a> by Daderot (CC0); <a href="https://commons.wikimedia.org/wiki/File:Dudley_Square_MBTA_station.jpg" target="_blank" rel="noopener">Dudley Square MBTA station</a> by Tim Pierce (CC BY 3.0); <a href="https://commons.wikimedia.org/wiki/File:Triple-decker_porches_on_Rosseter_Street,_Dorchester,_July_2013.JPG" target="_blank" rel="noopener">Triple-decker porches on Rosseter Street, Dorchester, July 2013</a> by Pi.1415926535 (CC BY-SA 4.0); <a href="https://commons.wikimedia.org/wiki/File:Mattapan_Square_Oct_2024.jpg" target="_blank" rel="noopener">Mattapan Square Oct 2024</a> by 4300streetcar (CC BY 4.0); <a href="https://commons.wikimedia.org/wiki/File:Lyceum_Hall,_Maverick_Square,_East_Boston_(16053949879).jpg" target="_blank" rel="noopener">Lyceum Hall, Maverick Square, East Boston (16053949879)</a> by City of Boston Archives from West Roxbury, United States (CC BY-SA 2.0); <a href="https://commons.wikimedia.org/wiki/File:Boston_Chinatown_gate_front_02.jpg" target="_blank" rel="noopener">Boston Chinatown gate front 02</a> by Peacearth (CC BY-SA 4.0); <a href="https://commons.wikimedia.org/wiki/File:MBTA_route_32_bus_at_Cleary_Square,_October_2020.JPG" target="_blank" rel="noopener">MBTA route 32 bus at Cleary Square, October 2020</a> by Pi.1415926535 (CC BY-SA 4.0); <a href="https://commons.wikimedia.org/wiki/File:Dudley_and_Warren_Street,_Roxbury_MA.jpg" target="_blank" rel="noopener">Dudley and Warren Street, Roxbury MA</a> by Tim Pierce (CC BY-SA 3.0); <a href="https://commons.wikimedia.org/wiki/File:Jackson_Square_station_from_the_south,_July_2016.jpg" target="_blank" rel="noopener">Jackson Square station from the south, July 2016</a> by Pi.1415926535 (CC BY-SA 3.0); <a href="https://commons.wikimedia.org/wiki/File:First_Church_in_Roxbury_in_2012,_Roxbury_MA.jpg" target="_blank" rel="noopener">First Church in Roxbury in 2012, Roxbury MA</a> by John Phelan (CC BY 4.0). State House drawing: simplified, not to scale.</p>
+</footer>
+
+<script src="js/gsap.min.js"></script>
+<script src="js/ScrollTrigger.min.js"></script>
+<script src="js/lenis.min.js"></script>
+<script src="js/site.js?v=13"></script>
+<script src="js/interact.js?v=4"></script>
+<script type="importmap">{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js" } }</script>
+<script type="module" src="js/drawing.js?v=10"></script>
+</body>
+</html>

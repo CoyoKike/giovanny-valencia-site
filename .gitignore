@@ -1,0 +1,6 @@
+img/flight/
+img/flight-m/
+img/_drone_backup/
+_src/
+*.before*
+js/loadtest.js

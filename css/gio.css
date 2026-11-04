@@ -1,0 +1,80 @@
+/* Giovanny Valencia: additions on top of the base styles (site.css) */
+
+/* ---------- the flight: a tall section, the stage stays put while the scroll flies the drone ---------- */
+.flight { position: relative; height: 420vh; background: var(--black); }
+.flight-stage { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden; transform-origin: 50% 0; }
+.flight-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.flight .hero-shade { position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(180deg, rgba(10,10,10,.45) 0%, rgba(10,10,10,0) 28%, rgba(10,10,10,0) 52%, rgba(10,10,10,.78) 100%); }
+.flight .hero-copy { position: absolute; z-index: 3; left: var(--pad); right: var(--pad); bottom: clamp(70px, 11vh, 120px); pointer-events: none; }
+.flight .eyebrow { display: flex; gap: 22px; flex-wrap: wrap; margin: 0 0 22px; color: rgba(255,255,255,.85); }
+.flight .eyebrow span::before { content: ""; display: inline-block; width: 6px; height: 6px; background: #fff; margin-right: 10px; vertical-align: 1px; }
+.flight .hero-title { font-size: clamp(54px, 10vw, 184px); }
+.flight-caps { position: absolute; z-index: 3; left: var(--pad); top: 50%; transform: translateY(-50%); pointer-events: none; }
+.cap { position: absolute; left: 0; top: 0; display: grid; gap: 10px; white-space: nowrap; opacity: 0; transform: translateY(24px);
+  transition: opacity .9s var(--ease), transform .9s var(--ease); }
+.cap b { font-family: "Inter Tight", sans-serif; font-size: clamp(40px, 6vw, 104px); line-height: .9; font-weight: 500; letter-spacing: -.045em; text-transform: none; color: #fff; }
+.cap span { color: rgba(255,255,255,.75); padding-left: 4px; }
+.cap.on { opacity: 1; transform: none; }
+.flight-bar { position: absolute; z-index: 3; left: var(--pad); right: var(--pad); bottom: 26px; display: flex; align-items: center; }
+.flight-bar i { flex: 1; height: 1px; background: rgba(255,255,255,.22); }
+.flight-bar i b { display: block; height: 100%; background: #fff; transform: scaleX(0); transform-origin: left; }
+.flight .scroll-cue { bottom: 56px; }
+
+/* ---------- the plan: the State House drawing ---------- */
+.drawing { position: relative; height: 640vh; background: var(--black); }
+.draw-stage { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden;
+  background:
+    radial-gradient(ellipse 60% 55% at 60% 52%, rgba(217,173,79,.06), rgba(10,10,10,0) 70%),
+    linear-gradient(var(--line) 1px, transparent 1px) 0 0 / 64px 64px,
+    linear-gradient(90deg, var(--line) 1px, transparent 1px) 0 0 / 64px 64px, var(--black);
+  background-blend-mode: normal; }
+.draw-stage::before { content: ""; position: absolute; inset: 0; background: rgba(10,10,10,.55); pointer-events: none; }
+#drawCanvas, #ashCanvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+#ashCanvas { z-index: 4; pointer-events: none; }
+.draw-intro { position: absolute; z-index: 3; left: var(--pad); top: 50%; transform: translateY(-50%); width: min(560px, 44vw); pointer-events: none; }
+.draw-intro .h-big { font-size: clamp(46px, 5.6vw, 100px); }
+.draw-end { position: absolute; z-index: 3; left: var(--pad); right: var(--pad); bottom: 28px; display: flex; justify-content: space-between; padding-top: 14px; border-top: 1px solid var(--line); color: var(--mute); opacity: 0; }
+.draw-end p { margin: 0; }
+
+/* museum labels: small, no box, a dot and a thin line pointing at the part they describe */
+.mlabels { position: absolute; inset: 0; z-index: 3; pointer-events: none; }
+.mlabel { position: absolute; left: 0; top: 0; width: 0; height: 0; opacity: 0; transition: opacity .8s var(--ease); }
+.mlabel > * { position: absolute; left: 0; width: 240px; }
+.mlabel .mono { top: -27px; color: var(--mute); font-size: 10.5px; }
+.mlabel b { top: -11px; font-size: 19px; line-height: 1.15; font-weight: 500; letter-spacing: -.02em; color: #fff; }
+.mlabel p { top: 14px; margin: 0; font-size: 13px; line-height: 1.45; color: rgba(255,255,255,.7); }
+.mlabel.on { opacity: 1; }
+.mlabel.gold b { color: #f0d08a; }
+.mlines { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 3; pointer-events: none; overflow: visible; }
+.mlines g { opacity: 0; transition: opacity .7s var(--ease); }
+.mlines polyline { fill: none; stroke: rgba(255,255,255,.55); stroke-width: 1; }
+.mlines circle { fill: #fff; stroke: rgba(255,255,255,.18); stroke-width: 6; }
+.mlines g.gold polyline { stroke: rgba(230,193,113,.75); } .mlines g.gold circle { fill: #e6c171; stroke: rgba(230,193,113,.22); }
+
+/* practice */
+.stats-label { margin: 64px 0 0; color: #6b6b6b; }
+.stats { margin-top: 28px; }
+.pm-side img { filter: grayscale(1) contrast(1.05); }
+
+@media (max-width: 900px) {
+  .flight { height: 380vh; }
+  .flight .eyebrow { gap: 14px; font-size: 10.5px; }
+  .flight .hero-foot { flex-direction: column; align-items: flex-start; gap: 22px; }
+  .flight-caps { top: 22%; }
+  .drawing { height: 600vh; }
+  .draw-intro { top: 86px; transform: none; width: auto; right: var(--pad); }
+  .mlabel { left: var(--pad) !important; right: var(--pad); top: auto; bottom: 78px; width: auto; height: auto; transform: none !important; }
+  .mlines { display: none; }
+  .mlabel > * { position: static; width: auto; text-align: left !important; display: block; }
+  .mlabel .mono { margin-bottom: 6px; } .mlabel b { font-size: 22px; } .mlabel p { margin-top: 6px; font-size: 14px; }
+  .draw-end { font-size: 9.5px; }
+}
+.stats b span.num { display: inline; margin: 0; font-size: inherit; color: inherit; }
+.card-media img, .sfig img, .pm img { max-width: none; }
+
+/* practice: Giovanny is the main picture, centred in its column; the city sits small at the corner */
+.pm-main.pm-portrait { width: min(100%, 520px); margin: 0 auto; }
+.pm-main.pm-portrait img { object-position: 38% 30%; filter: grayscale(1) contrast(1.05); }
+.pm-side.pm-city { width: 46%; height: 30vh; right: -6%; bottom: -6vh; }
+@media (max-width: 900px) { .pm-main.pm-portrait { width: 100%; } .pm-side.pm-city { height: 22vh; } }
