@@ -33,7 +33,7 @@
   /* ---------- the opening: four black-and-white photos, scrolling zooms through them and crossfades to the next ---------- */
   const fc = $('#flightCanvas'), fx = fc.getContext('2d');
   const tallScreen = matchMedia('(max-aspect-ratio: 4/5)').matches;
-  const SHOTS = ['dudley', 'eastboston', 'dorchester', 'statehouse'];   // Roxbury, East Boston, Dorchester, then the State House: from the block to the State House
+  const SHOTS = ['dudley', 'jp', 'dorchester', 'statehouse'];   // Roxbury, Jamaica Plain, Dorchester, then the State House: from the block to the State House
   const FN = SHOTS.length, frames = SHOTS.map(k => { const im = new Image(); im.decoding = 'async'; im.src = `img/photo/${k}${tallScreen ? '-m' : ''}.jpg`; im.onload = () => { fCur = -1; fdraw(); }; return im; });
   let fCur = -1, fWant = 0;
   function fsize() { const d = Math.min(devicePixelRatio, 2); fc.width = innerWidth * d; fc.height = innerHeight * d; fCur = -1; fdraw(); }

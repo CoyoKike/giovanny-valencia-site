@@ -78,3 +78,13 @@
 .pm-main.pm-portrait img { object-position: 38% 30%; filter: grayscale(1) contrast(1.05); }
 .pm-side.pm-city { width: 46%; height: 30vh; right: -6%; bottom: -6vh; }
 @media (max-width: 900px) { .pm-main.pm-portrait { width: 100%; } .pm-side.pm-city { height: 22vh; } }
+
+/* photo credits: folded into a quiet link */
+.credits-box { margin: 14px 0 0; }
+.credits-box summary { display: inline-block; cursor: pointer; list-style: none; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #4a4a4a; transition: color .2s; }
+.credits-box summary::-webkit-details-marker { display: none; }
+.credits-box summary::after { content: ' +'; }
+.credits-box[open] summary::after { content: ' –'; }
+.credits-box summary:hover { color: #9a9a9a; }
+.credits-box .credits { font-size: 10px; color: #4a4a4a; margin-top: 10px; max-width: 900px; }
+.credits-box .credits a { color: inherit; }
