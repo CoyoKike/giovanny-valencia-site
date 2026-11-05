@@ -81,7 +81,7 @@
   initForm();
 
   /* ---------- contact form: composes an email to Giovanny ---------- */
-  const TO = 'hello@example.com';              // TODO: Giovanny's real address
+  const TO = 'valenciagio@gmail.com';
   function initForm() {
     const f = $('#contactForm'), err = $('#formErr'), done = $('#formDone');
     f.addEventListener('submit', e => {
